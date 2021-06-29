@@ -41,7 +41,7 @@ public final class Menu {
 
 			Panel titlePanel = new Panel();
 			titlePanel.addComponent(new Label(" "));
-			titlePanel.addComponent(new Label(" Arch Linux Installation").addStyle(SGR.BOLD));
+			titlePanel.addComponent(new Label(" ").addStyle(SGR.BOLD));
 
 			Panel buttonsPanel = new Panel(new GridLayout(1).setHorizontalSpacing(1));
 
@@ -65,7 +65,7 @@ public final class Menu {
 			mainWindow.setTheme(new SimpleTheme(TextColor.ANSI.WHITE, TextColor.ANSI.BLUE));
 			mainWindow.setComponent(mainPanel);
 
-			BasicWindow window = new BasicWindow("Arch Linux Installation");
+			BasicWindow window = new BasicWindow("");
 			window.setHints(Arrays.asList(Window.Hint.CENTERED));
 			window.setComponent(contentPanel);
 
